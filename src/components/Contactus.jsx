@@ -1,32 +1,53 @@
-import React from "react";
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 
 const Contactus = () => {
+
     return (
         <>
-            <div className="row" style={{ marginTop: '4rem', margin: '10px',backgroundColor: '',boxShadow: '5px 5px 5px 5px rgba(1, 1, 1, 1'}}>
+            <div className="row" style={{ marginTop: '4rem', margin: '10px', }}>
                 <div className="col-6">
                     <h1>Send A Message</h1>
 
                     <Form style={{ margin: '10px' }}>
-                        <Form.Label>Your Name</Form.Label>
-                        <Form.Control placeholder="Your name" />
+                        <div className='your-name'>
+                            <label>Your Name</label><br />
+                            <input style={{ width: '100%' }}
+                                type="text"
+                                // value={Name}
 
-                        <Form.Label> Your Email</Form.Label>
-                        <Form.Control placeholder="Your Email" />
+                            />
+                        </div>
+                        <div>
 
-                        <Form.Label>Subject</Form.Label>
-                        <Form.Control placeholder="Subject" />
+                            <label>Email</label><br />
+                            <input style={{ width: '100%' }}
+                                type="text"
+                                // value={email}
 
-                        <Form.Label>Message</Form.Label>
-                        <Form.Control
-                            as="textarea"
-                            placeholder="Leave a message here"
-                            style={{ height: '100px' }}
-                        />
-                        <Button variant="primary" style={{ marginTop: '10px' }}>Send Message</Button>{' '}
+                            />
+                        </div>
+                        <div>
+                            <label>Subject</label><br />
+                            <input style={{ width: '100%' }}
+                                type="text"
+                                // value={Subject}
+
+                            />
+                        </div>
+                        <div>
+                            <label>Message</label><br />
+                            <input style={{ width: '100%' }}
+
+                                type="textarea"
+                                // value={Message}
+
+
+                            />
+                        </div>
+                        <Button type="submit" variant="primary" style={{ marginTop: '10px' }}>Send Message</Button>{' '}
                     </Form>
                 </div>
                 <div className="col-6">
@@ -36,7 +57,7 @@ const Contactus = () => {
                         Simply fill the from and send me an email.</h4>
                     <div className="social">
                         <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-github" style={{ fontSize: '50px', color: '#333',margin:'10px' }}></i>
+                            <i className="fab fa-github" style={{ fontSize: '50px', color: '#333', margin: '10px' }}></i>
                         </a>
 
                         <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
